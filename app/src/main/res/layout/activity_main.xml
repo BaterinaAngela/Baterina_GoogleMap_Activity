@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText_Search1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Location"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/editText_Search2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Location"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/button_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"/>
+
+        <Button
+            android:id="@+id/button_Clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
